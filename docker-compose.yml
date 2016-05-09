@@ -1,0 +1,5 @@
+FILEBEAT:
+  image: particle4dev/filebeat:1.0.1
+  volumes:
+    - /home/ubuntu/nginx/log:/var/log/nginx
+    - /home/ubuntu/filebeat/filebeat.yml:/etc/filebeat/filebeat.yml
